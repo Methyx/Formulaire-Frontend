@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <!-- reset CSS et Fonts -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ma feuille CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Axios  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <!-- Mon script  -->
+    <script src="./assets/js/doc-loaded.js"></script>
+  </head>
+  <body>
+    <div class="form-box">
+      <h1>Formulaire de contact</h1>
+      <form id="form">
+        <input type="text" id="first-name" placeholder="Prénom" />
+        <input type="text" id="last-name" placeholder="Nom" />
+        <input type="email" id="mail" required placeholder="Email" />
+        <input type="text" id="subject" placeholder="Sujet" />
+        <textarea
+          id="message"
+          rows="10"
+          cols="80"
+          placeholder="Votre message ici ..."
+        ></textarea>
+        <button type="submit" id="submit">Envoyer le message</button>
+        <h2 id="ok" class="hidden">Message envoyé. Merci</h2>
+        <h2 id="nok" class="hidden">
+          Un probleme est survenu. Merci de réessayer
+        </h2>
+      </form>
+    </div>
+  </body>
+</html>
