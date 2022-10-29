@@ -14,7 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       document.getElementById("nok").classList.add("hidden");
       document.getElementById("ok").classList.add("hidden");
-      const response = await axios.post("http://localhost:3000/form", data);
+      // const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "site--contactform-mail--gw6mlgwnmzwz.code.run:8080/form",
+        data
+      );
       console.log(response.status);
       if (response.data.message === "reçu") {
         document.getElementById("ok").classList.remove("hidden");
