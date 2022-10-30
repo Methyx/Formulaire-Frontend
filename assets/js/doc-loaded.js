@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("ok").classList.add("hidden");
       // const response = await axios.post("http://localhost:3000/form", data);
       const response = await axios.post(
-        "site--contactform-mail--gw6mlgwnmzwz.code.run:8080/form",
+        "https://site--contactform-mail--gw6mlgwnmzwz.code.run/form",
         data
       );
       console.log(response.status);
